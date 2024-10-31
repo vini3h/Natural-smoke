@@ -26,13 +26,14 @@ main {
 }
 
 h1 {
-    margin-top: 20px;
+    margin: 20px;
     margin-bottom: 20px; /* Espaço entre o h1 e o article */
 }
 
 article {
     max-width: 600px; /* Limita a largura do artigo para melhor legibilidade */
     padding: 10px; /* Adiciona algum espaço interno ao artigo */
+    margin: 10px;
     background-color: #ffffff; /* Cor de fundo para destaque */
     border-radius: 8px; /* Arredondar as bordas do artigo */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
