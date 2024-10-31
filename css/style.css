@@ -25,12 +25,12 @@ main {
     align-items: center; /* Centraliza horizontalmente os itens dentro do box */
 }
 
-h1 {
+main h1 {
     margin: 20px;
     margin-bottom: 20px; /* Espaço entre o h1 e o article */
 }
 
-article {
+main article {
     max-width: 600px; /* Limita a largura do artigo para melhor legibilidade */
     padding: 10px; /* Adiciona algum espaço interno ao artigo */
     margin: 10px;
