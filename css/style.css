@@ -31,12 +31,18 @@ main h1 {
 }
 
 main article {
-    max-width: 600px; /* Limita a largura do artigo para melhor legibilidade */
+    max-width: 700px; /* Limita a largura do artigo para melhor legibilidade */
     padding: 10px; /* Adiciona algum espaço interno ao artigo */
     margin: 10px;
     background-color: #ffffff; /* Cor de fundo para destaque */
     border-radius: 8px; /* Arredondar as bordas do artigo */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+    text-align: center;
+}
+
+#pub > img {
+    width: 100%;
+    max-width: 600px;
 }
 
 #sidebar {
@@ -46,7 +52,7 @@ main article {
     background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
-    position: relative;
+    position: fixed;
     transition: all .5s;
     min-width: 82px;
 }
