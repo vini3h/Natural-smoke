@@ -70,7 +70,7 @@ main article {
 }
 
 .side-item.active {
-    background-color: #4f46e5;
+    background-color: #021a26;
 }
 
 .side-item:hover:not(.active) {
