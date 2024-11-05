@@ -16,13 +16,27 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 let contador = 1;
+let slideInterval; // Variável para armazenar o intervalo
 
-setInterval( function(){
-    document.getElementById('slide' + contador).checked = true;
-    contador ++;
+// Função para iniciar a rotação automática
+function startSlideRotation() {
+    slideInterval = setInterval(function() {
+        document.getElementById('slide' + contador).checked = true;
+        contador++;
 
-    if(contador > 4) {
-        contador =1;
-    }
+        if (contador > 4) {
+            contador = 1;
+        }
+    }, 5000); // Intervalo de 5 segundos
+}
 
-}, 5000)
+// Iniciar a rotação assim que o documento for carregado
+startSlideRotation();
+
+// Interromper a rotação quando o usuário clicar nas barras de navegação
+const bars = document.querySelectorAll('.bar');
+bars.forEach(bar => {
+    bar.addEventListener('click', function() {
+        clearInterval(slideInterval); // Interrompe o intervalo
+    });
+});
