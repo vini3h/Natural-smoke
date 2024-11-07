@@ -219,7 +219,8 @@ section {
     flex-direction: column;
     padding: 10px 45px;
     background: #021a26;
-    width: 500px;
+    width: 450px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -234,7 +235,7 @@ form label{
     margin-bottom: 4px;
 }
 form input{
-    padding: 15px;
+    padding: 10px;
     outline: none;
     border: 0;
     margin-bottom: 20px;
