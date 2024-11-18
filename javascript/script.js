@@ -40,3 +40,13 @@ bars.forEach(bar => {
         clearInterval(slideInterval); // Interrompe o intervalo
     });
 });
+
+// função popup
+const popup = document.getElementById('popup');
+
+function handlePopup(open) {
+    if (open)
+        popup.classList.add('opened');
+    else
+        popup.classList.remove('opened');
+}

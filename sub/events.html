@@ -64,6 +64,28 @@
         <div id="box">
             <h1>Eventos</h1>
             <article>(Data/horario e informações de possíveis eventos - Inserir imagens? - Deixar a publicação mesmo após o evento ser realizado e anexar imagens do evento)</article>
+
+            <article style="background-color: #222;">
+                <div class="pop">
+
+                    <button class="popup-button" type="submit" onclick="handlePopup(true)">
+                        Abrir popup
+                    </button>
+
+                    <div class="popup" id="popup">
+                        <img src="../img/warning.png" alt="teste">
+
+                        <h2 class="title">Evento!</h2>
+
+                        <p class="desc">Descrição do evento</p>
+
+                        <button class="close-popup-button" type="submit" onclick="handlePopup(false)">
+                            Voltar
+                        </button>
+                    </div>
+
+                </div>
+            </article>
         </div>
     </main>
 

@@ -306,3 +306,71 @@ form button:hover{
 .return:hover {
     border-radius: 16px;
 }
+
+.pop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    position: relative;
+}
+
+.popup-button,
+.popup .close-popup-button {
+    background-color: #ee404c;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s;
+    margin: 12px 0;
+}
+
+.popup-button:hover,
+.popup .close-popup-button:hover {
+    opacity: .8;
+}
+
+.popup-button:active,
+.popup .close-popup-button:active {
+    transform: scale(.8);
+}
+
+.popup {
+    position: absolute;
+    background-color: #333;
+    padding: 30px 50px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    transition: all .4s;
+    z-index: -1;
+    transform: scale(.4);
+    opacity: 0;
+}
+
+.popup.opened {
+    z-index: 999;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.popup img {
+    width: 100%;
+}
+
+.popup h2.title {
+    color: #ee404c
+}
+
+.popup p.desc {
+    color: #fff;
+}
